@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block content %}
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">  
+  <br/> 
+  <div class="container"> 
+    <div class="row row-lg">
+      <div class="card h-100 ng-scope">
+        <div class="card-header text-center">
+          <h1 class="text-uppercase font-weight-bold ng-binding">"Detalle Índices Bursátiles"</h1>
+        </div>
+        <div class="card-body">
+          <p class="f-18 ng-binding">
+            Los índices son un promedio de las cotizaciones de una cartera de acciones representativas de un mercado. 
+            Se calculan como un promedio ponderado por capitalización de mercado. 
+            Los índices entregan una idea general del comportamiento del mercado, y constituyen la principal referencia ​–benchmark– para comparar el rendimiento de distintos instrumentos financieros.
+            ​​​​​​​​​​​​​​​​​​</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/> 
+  <div class="text-center">    
+    <h1 class="text-uppercase font-weight-bold ng-binding">SPCLX ENERGY</h1>    
+    <p class="lead">Índice sectorial que incluye acciones del sector energético.</p>
+    <br/>   
+    {% autoescape off %}
+    <p class="lead"><img src="data:image/png;base64, {{ image }}"></p><!-- Grafico -->
+    {% endautoescape %}
+  </div>
+  <br/>
+  <br/>
+  <div class="container">         
+    <div class="row">
+      <div class="col-lg mb-4 ng-scope">
+        <div class="card h-100 ng-scope">
+          <div class="card-header">
+            <h5 class="text-muted mb-0 font-weight-bold ng-binding">Componentes Principales por Ponderación</h5>
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="ng-binding">Nemotécnico</th>
+                  <th scope="col" class="ng-binding">Razón Social</th>
+                </tr>
+              </thead>
+              <tbody kendo-list-view="" k-options="optionsEmpresasIndice" style="border-style: none" data-role="listview" class="k-widget k-listview" role="listbox">
+                <tr class="product ng-scope" data-uid="aa6cd7f9-e424-4919-8ea2-23bfe0cb7d7f" role="option" aria-selected="false">
+                  <td><a href="/copec">COPEC</a></td>
+                  <td>EMPRESAS COPEC S.A.</td>
+                </tr>
+                <tr class="product ng-scope" data-uid="ef5b59a2-fd8d-4105-9208-b87eafa6ee02" role="option" aria-selected="false">
+                  <td><a href="/Lipigas">LIPIGAS</a></td>
+                  <td>EMPRESAS LIPIGAS S.A.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> 
+      </div>
+    </div>  
+  </div>
+</body>
+{% endblock %}
+
+
+
+
+

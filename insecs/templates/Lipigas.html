@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">  
+    <br/> 
+    <div class="container">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1 class="text-uppercase font-weight-bold">EMPRESAS LIPIGAS S.A.</h1>
+            </div>
+                <hr class="my-4">
+                <p class="lead"></p>        
+        </div>
+    </div>
+    <div class="text-center">        
+        <br/>   
+        {% autoescape off %}
+        <p class="lead"><img src="data:image/png;base64, {{ image }}"></p><!-- Grafico -->
+        {% endautoescape %}
+        <br/>
+        <br/>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="h-100 ng-scope">
+                <div class="card h100">
+                    <div class="card-header">
+                        <div class="d-flex align-items-center">
+                            <h4 class="flex-fill text-muted ng-binding">LIPIGAS</h4>
+                            <a href="https://lipigas.cl/" target="_blank" class="btn btn-sm btn-success btn-dark ng-binding">Visitar Empresa</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0 ng-binding">
+                            Empresas Lipigas SA se dedica a la comercialización, distribución y comercialización de gas licuado de petróleo 
+                            (GLP) y gas natural (GN) en Chile, Perú y Colombia. La empresa comercializa y distribuye GLP principalmente a 
+                            través de cilindros, así como a través de camiones para clientes de los sectores residencial, comercial, 
+                            institucional, industrial y de transporte. También distribuye GN a hogares, comercios e industrias. También proporciona 
+                            gas natural licuado, gas natural comprimido y gas medido; y genera y comercializa energía eléctrica a base de gas 
+                            natural para clientes industriales y comerciales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-lg">
+            <div class="h-100 ng-scope">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="d-inline-block text-muted ng-binding">Información comercial</h4>                        
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Rubro:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Servicios Publicos</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Dirección:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">AV. APOQUINDO 5400, PISO 15, LAS CONDES</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Ciudad:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Santiago</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Teléfono Mesa Central:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">226503620</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Presidente:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Juan Manuel Santa Cruz Munizaga</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Gerente General:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Angel Francisco Mafucci Solimano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <br/>
+    <br/>
+    <div class="row">        
+        <div class="col-lg-6 mb-4">
+            <div class="h-100 ng-scope">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="d-inline-block text-muted ng-binding">Departamento de acciones</h4>                        
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Dirección:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">AV. APOQUINDO 5400, PISO 15, LAS CONDES</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Ciudad:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">SANTIAGO</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Teléfono:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">226503620</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    </div>
+</body>
+
+{% endblock %}

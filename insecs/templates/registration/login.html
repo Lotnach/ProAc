@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">
+    <br/>    
+    <div class="container" style="width: 25rem;">
+        <div class="card text-center">
+            <h4 class="card-title">Ingresar usuario y clave</h4>
+            <form action="" method="post">
+                {% csrf_token %}
+                <table class="table table-borderless">
+                    {{ form.as_table }}
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block btn-dark">Ingresar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>    
+    <br/>
+</body>
+
+{% endblock %}

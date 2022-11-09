@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% block content %}
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">  
+    <br/> 
+    <div class="container">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1 class="text-uppercase font-weight-bold">EMPRESAS COPEC S.A.</h1>
+            </div>
+                <hr class="my-4">
+                <p class="lead"></p>        
+        </div>
+    </div>
+    <div class="text-center">        
+        <br/>   
+        {% autoescape off %}
+        <p class="lead"><img src="data:image/png;base64, {{ image }}"></p><!-- Grafico -->
+        {% endautoescape %}
+        <br/>
+        <br/>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="h-100 ng-scope">
+                <div class="card h100">
+                    <div class="card-header">
+                        <div class="d-flex align-items-center">
+                            <h4 class="flex-fill text-muted ng-binding">COPEC</h4>
+                            <a href="https://www.empresascopec.cl/" target="_blank" class="btn btn-sm btn-success btn-dark ng-binding">Visitar Empresa</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0 ng-binding">
+                            Empresas Copec es una de las principales sociedades anónimas de Chile y está presente en dos grandes áreas de 
+                            actividad: recursos naturales, donde se cuenta con claras ventajas competitivas, y energía, estrechamente ligada 
+                            al crecimiento y desarrollo productivo. En cada uno de estos sectores, la Compañía está permanentemente impulsando 
+                            importantes programas de inversión, con el objetivo de elevar la escala de sus operaciones, expandir sus fronteras, 
+                            aprovechar sinergias y velar por la sustentabilidad en todas sus actividades. Actualmente, Empresas Copec 
+                            comercializa sus productos en más de 80 países y cuenta con importantes plataformas productivas en Chile, Argentina, 
+                            Brasil, Canadá, Colombia, Estados Unidos y Uruguay.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-lg">
+            <div class="h-100 ng-scope">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="d-inline-block text-muted ng-binding">Información comercial</h4>                        
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Rubro:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Comerciales y distribuidoras</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Dirección:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">AV. EL GOLF 150, PISO 17, LAS CONDES</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Ciudad:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Santiago</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Teléfono Mesa Central:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">4617061</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Presidente:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Roberto Angelini Rossi</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Gerente General:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">Eduardo Navarro Beltran</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <br/>
+    <br/>
+    <div class="row">        
+        <div class="col-lg-6 mb-4">
+            <div class="h-100 ng-scope">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h4 class="d-inline-block text-muted ng-binding">Departamento de acciones</h4>                        
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Dirección:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">EL GOLF NRO.140, PISO 1, LAS CONDES</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Ciudad:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">SANTIAGO</span>
+                            </div>
+                        </div>
+                        <div class="row mb-3 ng-scope">
+                            <div class="col-lg-4" style="font-weight: bold">
+                                <span class="mb-0 ng-binding">Teléfono:</span>
+                            </div>
+                            <div class="col-lg-8">
+                                <span class="ng-binding">3646782-86</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    </div>
+</body>
+{% endblock %}

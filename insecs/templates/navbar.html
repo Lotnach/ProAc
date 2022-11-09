@@ -1,0 +1,34 @@
+<div class="container-fluid navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand" href="{% url 'index' %}">Proyección de valores accionarios</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+            {% if user.is_authenticated %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/insecs">Ver índices sectoriales<span class="sr-only">(current)</span></a>
+                    </li>            
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <span class="navbar-text">
+                    {{ user.username }}
+                </span>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Salir</a>
+                </li>
+            </ul>        
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'signup' %}">Registrarse</a>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">
+    <div class="container">
+        <br/>
+        <h1 class="text-center">Índices Sectoriales Disponibles</h1>
+        <br/>
+        <br/>
+        <div class="row mt-5 justify-content-center">
+            {% for insec in insecs %}
+            <div class="text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ insec.nemo }}</h5> 
+                        <br/>                       
+                        <a href="/energy" class="btn btn-sm btn-success btn-dark ng-binding">Ver detalle</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <br/>
+        <br/>
+    </div>
+</body>
+{% endblock %}

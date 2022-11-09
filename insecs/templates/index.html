@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body ng-app="app" ng-controller="mainController" ng-show="globales.body" ng-clas="$root.classBody" class="ng-scope" style="background-color:#e6e6e6;">
+    <br/>
+    {% if not user.is_authenticated %}
+    <div class="container"></div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            **Para poder acceder a los dashboard, debes ingresar tu usuario y clave o registrarte!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>      
+    {% endif %} 
+    <div class="container">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1 class="text-uppercase font-weight-bold">Bienvenido a la proyección de valores accionarios</h1>
+            </div>
+                <hr class="my-4">
+                <p class="lead">Este proyecto está desarrollado para proyectar valores accionarios de los componentes del índice sectorial SPCLX-ENERGY
+                    (COPEC y LIPIGAS). La principal idea de esta app es ver el comportamiento de las proyecciones realizadas con la red neuronal LSTM
+                    usando los precios históricos de cierre. De momento nos encontramos en la primera entrega del proyecto, en el cual podrás 
+                    ingresar a ver un dashboard representativo de los precios de cierre del sector energético. También verás la proyección hecha con 
+                    LSTM de sus componentes (COPEC y LIPIGAS), junto al valor real, plasmados en sus respectivos dashboard.
+                </p>        
+        </div>
+    </div>
+    <div class="container"> 
+        <div class="jumbotron">          
+            <div class="text-center">
+                <h3 class="text-uppercase font-weight-bold">Advertencia</h3>
+            </div>
+            <hr class="my-4">
+            <p class="lead">**La información proporcionada por los dashboard es para el estudio de la red neuronal LSTM.​​​​​​​​​​​​​​​​​​</p>
+            <p class="lead">**Le recordamos que siempre hay un riesgo al momento de invertir.​​​​​​​​​​​​​​​​​​</p>            
+        </div>        
+    </div>   
+    <br/>
+    <br/>
+</body>
+{% endblock %}
