@@ -1,1 +1,1 @@
-web: gunicorn ProAc.wsgi
+web: gunicorn ProAc.wsgi --log-file -
