@@ -320,7 +320,8 @@ class EnergyPredictionView(LoginRequiredMixin,TemplateView):
     def get(self, request, **kwargs):
 
         #Generamos las cotizaciones
-        dataset = pd.read_csv('insecs\SPCLX_ENERGY_S_History.csv', index_col='FECHA', parse_dates=['FECHA'])
+        # dataset = pd.read_csv('insecs\SPCLX_ENERGY_S_History.csv', index_col='FECHA', parse_dates=['FECHA'])
+        dataset = pd.read_csv('https://raw.githubusercontent.com/Lotnach/ProAc/main/insecs/SPCLX_ENERGY_S_History.csv', index_col='FECHA', parse_dates=['FECHA'])
         dataset.head()
 
         plt.figure(figsize=(14,7))        
